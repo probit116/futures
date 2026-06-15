@@ -2036,7 +2036,8 @@
             <h3>合约持仓分层统计（六档）</h3>
             <div class="spec-list">
               <div class="spec-item"><strong>统计对象</strong><span>按统计截止时点用户当前持仓进行分层统计；用户在同一时点可同时存在多条持仓（不同合约、不同仓位类型、不同方向），各维度按持仓条目分别计入对应分组。</span></div>
-              <div class="spec-item"><strong>持仓金额档位</strong><span>持仓金额分为六档：0至5,000、5,000至10,000、10,000至20,000、20,000至30,000、30,000至50,000、50,000及以上。</span></div>
+              <div class="spec-item"><strong>标准合约持仓金额档位</strong><span>标准合约持仓金额分为六档：0至5,000、5,000至50,000、50,000至200,000、200,000至1,000,000、1,000,000至2,000,000、2,000,000以上。</span></div>
+              <div class="spec-item"><strong>迷你合约持仓金额档位</strong><span>迷你合约持仓金额分为六档：0至5,000、5,000至10,000、10,000至20,000、20,000至30,000、30,000至50,000、50,000及以上。</span></div>
               <div class="spec-item"><strong>标准合约</strong><span>标准合约统计范围为平台标准合约品类下的全部持仓条目。</span></div>
               <div class="spec-item"><strong>迷你合约</strong><span>迷你合约统计范围为平台迷你合约品类下的全部持仓条目。</span></div>
               <div class="spec-item"><strong>全仓 / 逐仓</strong><span>全仓表示该持仓条目采用全仓保证金模式；逐仓表示该持仓条目采用逐仓保证金模式。</span></div>
@@ -2054,7 +2055,7 @@
               <div class="spec-item"><strong>人数口径</strong><span>每个档位右侧同步展示对应去重人数；持仓金额卡片展示该档位持仓用户数，持仓盈亏卡片展示该档位盈利用户数。</span></div>
               <div class="spec-item"><strong>持仓金额口径</strong><span>各持仓金额分析卡内展示该组合在该持仓金额档位下的金额占比、合计持仓金额和对应人数，金额单位统一为 USDT。</span></div>
               <div class="spec-item"><strong>持仓盈亏口径</strong><span>各持仓盈亏分析卡内展示该组合在该持仓金额档位下的持仓盈亏金额和对应盈利人数，金额单位统一为 USDT。</span></div>
-              <div class="spec-item"><strong>曲线图辅助分析</strong><span>报表下方同步提供持仓金额六档曲线图和持仓盈亏六档曲线图，用于更直观比较全仓 / 逐仓、多仓 / 空仓四类组合在各档位的变化。</span></div>
+              <div class="spec-item"><strong>曲线图辅助分析</strong><span>分层分析卡片下方单独设置曲线辅助分析区块，集中展示持仓金额六档曲线图和持仓盈亏六档曲线图，用于更直观比较全仓 / 逐仓、多仓 / 空仓四类组合在各档位的变化。</span></div>
               <div class="spec-item"><strong>全仓 / 逐仓 / 多仓 / 空仓</strong><span>全仓表示该持仓条目采用全仓保证金模式；逐仓表示该持仓条目采用逐仓保证金模式；多仓表示做多方向；空仓表示做空方向。</span></div>
             </div>
           </div>
@@ -2119,13 +2120,13 @@
             <h3>迷你合约持仓金额 / 盈亏六档统计报表</h3>
             <div class="spec-list">
               <div class="spec-item"><strong>统计对象</strong><span>报表仅统计迷你合约持仓，按全仓、逐仓、多仓、空仓四个组合维度分开展示。</span></div>
-              <div class="spec-item"><strong>持仓金额六档</strong><span>报表固定按六档展示：0至5,000、5,000至50,000、50,000至200,000、200,000至1,000,000、1,000,000至2,000,000、2,000,000以上。</span></div>
+              <div class="spec-item"><strong>持仓金额六档</strong><span>报表固定按六档展示：0至5,000、5,000至10,000、10,000至20,000、20,000至30,000、30,000至50,000、50,000及以上。</span></div>
               <div class="spec-item"><strong>拆分展示方式</strong><span>该模块不再使用单张横向大表展示，而是按全仓多仓、全仓空仓、逐仓多仓、逐仓空仓拆分为独立分析卡片，避免不同仓位组合混看。</span></div>
               <div class="spec-item"><strong>金额显示规则</strong><span>报表中的金额类字段统一按缩写展示：0至10,000 显示具体数值；10,001至1,000,000 显示为 K；1,000,001 以上显示为 M。</span></div>
               <div class="spec-item"><strong>人数口径</strong><span>每个档位右侧同步展示对应去重人数；持仓金额卡片展示该档位持仓用户数，持仓盈亏卡片展示该档位盈利用户数。</span></div>
               <div class="spec-item"><strong>持仓金额口径</strong><span>各持仓金额分析卡内展示该组合在该持仓金额档位下的金额占比、合计持仓金额和对应人数，金额单位统一为 USDT。</span></div>
               <div class="spec-item"><strong>持仓盈亏口径</strong><span>各持仓盈亏分析卡内展示该组合在该持仓金额档位下的持仓盈亏金额和对应盈利人数，金额单位统一为 USDT。</span></div>
-              <div class="spec-item"><strong>曲线图辅助分析</strong><span>报表下方同步提供持仓金额六档曲线图和持仓盈亏六档曲线图，用于更直观比较全仓 / 逐仓、多仓 / 空仓四类组合在各档位的变化。</span></div>
+              <div class="spec-item"><strong>曲线图辅助分析</strong><span>分层分析卡片下方单独设置曲线辅助分析区块，集中展示持仓金额六档曲线图和持仓盈亏六档曲线图，用于更直观比较全仓 / 逐仓、多仓 / 空仓四类组合在各档位的变化。</span></div>
               <div class="spec-item"><strong>全仓 / 逐仓 / 多仓 / 空仓</strong><span>全仓表示该持仓条目采用全仓保证金模式；逐仓表示该持仓条目采用逐仓保证金模式；多仓表示做多方向；空仓表示做空方向。</span></div>
             </div>
           </div>
