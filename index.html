@@ -1109,6 +1109,58 @@
       </section>
 
       <section class="section">
+        <div class="section-head"><h2 class="section-title">持仓金额 / 盈亏六档统计报表</h2></div>
+        <div class="table-card">
+          <div class="table-toolbar">
+            <h3 class="table-title">标准合约持仓金额 / 盈亏分布</h3>
+            <div class="table-actions">
+              <button class="ghost-btn">导出报表</button>
+              <button class="ghost-btn">重置筛选</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>持仓金额档位（USDT）</th>
+                  <th>全仓-多仓持仓金额</th>
+                  <th>全仓-多仓持仓盈亏</th>
+                  <th>全仓-空仓持仓金额</th>
+                  <th>全仓-空仓持仓盈亏</th>
+                  <th>逐仓-多仓持仓金额</th>
+                  <th>逐仓-多仓持仓盈亏</th>
+                  <th>逐仓-空仓持仓金额</th>
+                  <th>逐仓-空仓持仓盈亏</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>0 - 5,000</td><td>18.6M</td><td class="green">+860K</td><td>14.2M</td><td class="green">+620K</td><td>9.8M</td><td class="green">+440K</td><td>8.4M</td><td class="green">+380K</td></tr>
+                <tr><td>5,000 - 50,000</td><td>42.8M</td><td class="green">+1.94M</td><td>36.4M</td><td class="green">+1.52M</td><td>28.6M</td><td class="green">+1.18M</td><td>24.2M</td><td class="green">+960K</td></tr>
+                <tr><td>50,000 - 200,000</td><td>66.2M</td><td class="green">+3.26M</td><td>58.8M</td><td class="green">+2.58M</td><td>46.4M</td><td class="green">+1.96M</td><td>39.6M</td><td class="green">+1.62M</td></tr>
+                <tr><td>200,000 - 1,000,000</td><td>98.4M</td><td class="green">+4.84M</td><td>84.6M</td><td class="green">+3.92M</td><td>62.8M</td><td class="green">+2.88M</td><td>54.2M</td><td class="green">+2.36M</td></tr>
+                <tr><td>1,000,000 - 2,000,000</td><td>82.6M</td><td class="green">+4.16M</td><td>70.2M</td><td class="green">+3.38M</td><td>50.6M</td><td class="green">+2.46M</td><td>42.8M</td><td class="green">+1.94M</td></tr>
+                <tr><td>&gt; 2,000,000</td><td>106.8M</td><td class="green">+5.28M</td><td>92.4M</td><td class="green">+4.22M</td><td>68.2M</td><td class="green">+3.06M</td><td>56.4M</td><td class="green">+2.42M</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="charts-grid" style="margin-top: 18px;">
+          <div class="chart-card">
+            <h3 class="chart-title">标准合约持仓金额六档曲线分析</h3>
+            <p class="chart-desc">保留 Excel 报表明细的同时，用曲线图展示四类仓位在六档持仓金额区间下的金额变化，方便运营快速比较仓位结构。</p>
+            <div class="legend"><span><i style="background:#13c2c2"></i>全仓多仓持仓金额</span><span><i style="background:#2d8cf0"></i>全仓空仓持仓金额</span><span><i style="background:#7a5af8"></i>逐仓多仓持仓金额</span><span><i style="background:#faad14"></i>逐仓空仓持仓金额</span></div>
+            <svg class="svg-chart" viewBox="0 0 560 220" preserveAspectRatio="none"><g stroke="rgba(90,113,145,0.14)" stroke-width="1"><line x1="42" y1="28" x2="520" y2="28"></line><line x1="42" y1="72" x2="520" y2="72"></line><line x1="42" y1="116" x2="520" y2="116"></line><line x1="42" y1="160" x2="520" y2="160"></line><line x1="42" y1="204" x2="520" y2="204"></line></g><polyline points="42,186 138,156 234,126 330,96 426,110 520,86" fill="none" stroke="#13c2c2" stroke-width="4"></polyline><polyline points="42,192 138,164 234,136 330,112 426,124 520,98" fill="none" stroke="#2d8cf0" stroke-width="4"></polyline><polyline points="42,198 138,174 234,150 330,132 426,146 520,118" fill="none" stroke="#7a5af8" stroke-width="4"></polyline><polyline points="42,200 138,180 234,158 330,140 426,154 520,128" fill="none" stroke="#faad14" stroke-width="4"></polyline></svg>
+          </div>
+          <div class="chart-card">
+            <h3 class="chart-title">标准合约持仓盈亏六档曲线分析</h3>
+            <p class="chart-desc">曲线图直接对比不同仓位组合在六档持仓金额区间下的盈亏变化，方便识别高盈利或高风险集中档位。</p>
+            <div class="legend"><span><i style="background:#52c41a"></i>全仓多仓持仓盈亏</span><span><i style="background:#13c2c2"></i>全仓空仓持仓盈亏</span><span><i style="background:#2d8cf0"></i>逐仓多仓持仓盈亏</span><span><i style="background:#7a5af8"></i>逐仓空仓持仓盈亏</span></div>
+            <svg class="svg-chart" viewBox="0 0 560 220" preserveAspectRatio="none"><g stroke="rgba(90,113,145,0.14)" stroke-width="1"><line x1="42" y1="28" x2="520" y2="28"></line><line x1="42" y1="72" x2="520" y2="72"></line><line x1="42" y1="116" x2="520" y2="116"></line><line x1="42" y1="160" x2="520" y2="160"></line><line x1="42" y1="204" x2="520" y2="204"></line></g><polyline points="42,192 138,166 234,138 330,104 426,120 520,92" fill="none" stroke="#52c41a" stroke-width="4"></polyline><polyline points="42,198 138,176 234,150 330,122 426,136 520,110" fill="none" stroke="#13c2c2" stroke-width="4"></polyline><polyline points="42,202 138,184 234,162 330,142 426,152 520,126" fill="none" stroke="#2d8cf0" stroke-width="4"></polyline><polyline points="42,204 138,190 234,170 330,150 426,162 520,136" fill="none" stroke="#7a5af8" stroke-width="4"></polyline></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
         <div class="section-head"><h2 class="section-title">合约趋势分析</h2></div>
         <div class="charts-grid">
           <div class="chart-card">
@@ -1313,6 +1365,58 @@
             <div class="metric-card"><div class="metric-card__label">用户迷你总开仓金额</div><div class="metric-card__value blue">156,820,000</div><div class="metric-card__sub">统计周期内开仓总金额</div></div>
             <div class="metric-card"><div class="metric-card__label">用户迷你总平仓金额</div><div class="metric-card__value">148,420,000</div><div class="metric-card__sub">统计周期内平仓总金额</div></div>
             <div class="metric-card"><div class="metric-card__label">迷你合约盈利用户</div><div class="metric-card__value green">5,328</div><div class="metric-card__sub">迷你合约累计总盈亏大于 0 的用户</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">持仓金额 / 盈亏六档统计报表</h2></div>
+        <div class="table-card">
+          <div class="table-toolbar">
+            <h3 class="table-title">迷你合约持仓金额 / 盈亏分布</h3>
+            <div class="table-actions">
+              <button class="ghost-btn">导出报表</button>
+              <button class="ghost-btn">重置筛选</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>持仓金额档位（USDT）</th>
+                  <th>全仓-多仓持仓金额</th>
+                  <th>全仓-多仓持仓盈亏</th>
+                  <th>全仓-空仓持仓金额</th>
+                  <th>全仓-空仓持仓盈亏</th>
+                  <th>逐仓-多仓持仓金额</th>
+                  <th>逐仓-多仓持仓盈亏</th>
+                  <th>逐仓-空仓持仓金额</th>
+                  <th>逐仓-空仓持仓盈亏</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>0 - 5,000</td><td>8.8M</td><td class="green">+380K</td><td>6.2M</td><td class="green">+240K</td><td>4.8M</td><td class="green">+200K</td><td>3.4M</td><td class="green">+140K</td></tr>
+                <tr><td>5,000 - 50,000</td><td>18.6M</td><td class="green">+920K</td><td>14.2M</td><td class="green">+660K</td><td>10.8M</td><td class="green">+540K</td><td>7.2M</td><td class="green">+320K</td></tr>
+                <tr><td>50,000 - 200,000</td><td>26.4M</td><td class="green">+1.26M</td><td>21.8M</td><td class="green">+940K</td><td>15.4M</td><td class="green">+720K</td><td>10.6M</td><td class="green">+480K</td></tr>
+                <tr><td>200,000 - 1,000,000</td><td>38.8M</td><td class="green">+1.88M</td><td>30.2M</td><td class="green">+1.42M</td><td>22.6M</td><td class="green">+1.08M</td><td>15.8M</td><td class="green">+760K</td></tr>
+                <tr><td>1,000,000 - 2,000,000</td><td>24.8M</td><td class="green">+1.24M</td><td>19.6M</td><td class="green">+960K</td><td>13.8M</td><td class="green">+680K</td><td>9.6M</td><td class="green">+460K</td></tr>
+                <tr><td>&gt; 2,000,000</td><td>32.6M</td><td class="green">+1.62M</td><td>24.8M</td><td class="green">+1.18M</td><td>17.4M</td><td class="green">+840K</td><td>12.2M</td><td class="green">+580K</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="charts-grid" style="margin-top: 18px;">
+          <div class="chart-card">
+            <h3 class="chart-title">迷你合约持仓金额六档曲线分析</h3>
+            <p class="chart-desc">在保留明细报表的基础上，用曲线图直观看迷你合约四类仓位在六档持仓金额区间下的金额变化。</p>
+            <div class="legend"><span><i style="background:#13c2c2"></i>全仓多仓持仓金额</span><span><i style="background:#2d8cf0"></i>全仓空仓持仓金额</span><span><i style="background:#7a5af8"></i>逐仓多仓持仓金额</span><span><i style="background:#faad14"></i>逐仓空仓持仓金额</span></div>
+            <svg class="svg-chart" viewBox="0 0 560 220" preserveAspectRatio="none"><g stroke="rgba(90,113,145,0.14)" stroke-width="1"><line x1="42" y1="28" x2="520" y2="28"></line><line x1="42" y1="72" x2="520" y2="72"></line><line x1="42" y1="116" x2="520" y2="116"></line><line x1="42" y1="160" x2="520" y2="160"></line><line x1="42" y1="204" x2="520" y2="204"></line></g><polyline points="42,196 138,178 234,164 330,142 426,166 520,154" fill="none" stroke="#13c2c2" stroke-width="4"></polyline><polyline points="42,200 138,186 234,172 330,154 426,176 520,164" fill="none" stroke="#2d8cf0" stroke-width="4"></polyline><polyline points="42,202 138,192 234,182 330,168 426,184 520,172" fill="none" stroke="#7a5af8" stroke-width="4"></polyline><polyline points="42,204 138,196 234,188 330,176 426,190 520,180" fill="none" stroke="#faad14" stroke-width="4"></polyline></svg>
+          </div>
+          <div class="chart-card">
+            <h3 class="chart-title">迷你合约持仓盈亏六档曲线分析</h3>
+            <p class="chart-desc">曲线图更适合运营直接看迷你合约各仓位组合在不同持仓档位下的盈亏分布变化。</p>
+            <div class="legend"><span><i style="background:#52c41a"></i>全仓多仓持仓盈亏</span><span><i style="background:#13c2c2"></i>全仓空仓持仓盈亏</span><span><i style="background:#2d8cf0"></i>逐仓多仓持仓盈亏</span><span><i style="background:#7a5af8"></i>逐仓空仓持仓盈亏</span></div>
+            <svg class="svg-chart" viewBox="0 0 560 220" preserveAspectRatio="none"><g stroke="rgba(90,113,145,0.14)" stroke-width="1"><line x1="42" y1="28" x2="520" y2="28"></line><line x1="42" y1="72" x2="520" y2="72"></line><line x1="42" y1="116" x2="520" y2="116"></line><line x1="42" y1="160" x2="520" y2="160"></line><line x1="42" y1="204" x2="520" y2="204"></line></g><polyline points="42,202 138,188 234,176 330,160 426,176 520,168" fill="none" stroke="#52c41a" stroke-width="4"></polyline><polyline points="42,206 138,194 234,184 330,170 426,184 520,176" fill="none" stroke="#13c2c2" stroke-width="4"></polyline><polyline points="42,208 138,198 234,190 330,178 426,192 520,184" fill="none" stroke="#2d8cf0" stroke-width="4"></polyline><polyline points="42,210 138,202 234,196 330,184 426,196 520,190" fill="none" stroke="#7a5af8" stroke-width="4"></polyline></svg>
           </div>
         </div>
       </section>
@@ -1640,6 +1744,22 @@
             <div class="spec-item"><strong>强平指标口径</strong><span>强平相关指标仅保留 1 个：强平单。强平单指平台触发的强制平仓订单笔数。</span></div>
           </div>
         </div>
+        <div class="spec-block">
+          <h3>报表筛选</h3>
+          <div class="spec-list">
+            <div class="spec-item"><strong>开始时间</strong><span>筛选统计周期开始日期，展示为日期输入框；与结束时间组合决定本次报表统计范围。</span></div>
+            <div class="spec-item"><strong>结束时间</strong><span>筛选统计周期结束日期，展示为日期输入框；结束时间不得早于开始时间。</span></div>
+            <div class="spec-item"><strong>统计口径</strong><span>支持小时、日、周、月、累计五种切换方式；切换后页面内指标、报表和趋势图统一按当前口径刷新展示。</span></div>
+            <div class="spec-item"><strong>顶部提示栏</strong><span>展示当前选中的统计口径与时间范围，用于提示运营当前看到的是哪一段数据。</span></div>
+          </div>
+        </div>
+        <div class="spec-block">
+          <h3>步骤导航</h3>
+          <div class="spec-list">
+            <div class="spec-item"><strong>页面切换</strong><span>左侧步骤导航用于切换总览与用户、资金、合约分析、迷你合约分析、收入与风险指标五个逻辑页面。</span></div>
+            <div class="spec-item"><strong>切换规则</strong><span>点击某一页签后，仅切换右侧主内容与对应口径定义，不改变顶部筛选条件。</span></div>
+          </div>
+        </div>
 
         <div class="spec-page active" data-spec-page="overview">
           <div class="spec-block">
@@ -1745,6 +1865,18 @@
             </div>
           </div>
           <div class="spec-block">
+            <h3>标准合约持仓金额 / 盈亏六档统计报表</h3>
+            <div class="spec-list">
+              <div class="spec-item"><strong>统计对象</strong><span>报表仅统计标准合约持仓，按全仓、逐仓、多仓、空仓四个组合维度分开展示。</span></div>
+              <div class="spec-item"><strong>持仓金额六档</strong><span>报表固定按六档展示：0至5,000、5,000至50,000、50,000至200,000、200,000至1,000,000、1,000,000至2,000,000、2,000,000以上。</span></div>
+              <div class="spec-item"><strong>金额显示规则</strong><span>报表中的金额类字段统一按缩写展示：0至10,000 显示具体数值；10,001至1,000,000 显示为 K；1,000,001 以上显示为 M。</span></div>
+              <div class="spec-item"><strong>持仓金额口径</strong><span>表格内对应金额列展示该组合在该持仓金额档位下的合计持仓金额，金额单位统一为 USDT。</span></div>
+              <div class="spec-item"><strong>持仓盈亏口径</strong><span>表格内对应盈亏列展示该组合在该持仓金额档位下的合计持仓盈亏金额，金额单位统一为 USDT。</span></div>
+              <div class="spec-item"><strong>曲线图辅助分析</strong><span>报表下方同步提供持仓金额六档曲线图和持仓盈亏六档曲线图，用于更直观比较全仓 / 逐仓、多仓 / 空仓四类组合在各档位的变化。</span></div>
+              <div class="spec-item"><strong>全仓 / 逐仓 / 多仓 / 空仓</strong><span>全仓表示该持仓条目采用全仓保证金模式；逐仓表示该持仓条目采用逐仓保证金模式；多仓表示做多方向；空仓表示做空方向。</span></div>
+            </div>
+          </div>
+          <div class="spec-block">
             <h3>合约趋势分析</h3>
             <div class="spec-list">
               <div class="spec-item"><strong>合约成交额 / 手续费 / 资金费趋势</strong><span>按当前筛选时间口径统计每个时间点内合约成交额、合约手续费金额和资金费净收入。</span></div>
@@ -1799,6 +1931,18 @@
               <div class="spec-item"><strong>全仓 / 逐仓</strong><span>全仓表示该持仓条目采用全仓保证金模式；逐仓表示该持仓条目采用逐仓保证金模式。</span></div>
               <div class="spec-item"><strong>多仓 / 空仓</strong><span>多仓表示持仓方向为做多；空仓表示持仓方向为做空。</span></div>
               <div class="spec-item"><strong>分层展示口径</strong><span>分层分析卡片按六档展示持仓条目分布与盈利额拆分，均以当前页展示口径为准。</span></div>
+            </div>
+          </div>
+          <div class="spec-block">
+            <h3>迷你合约持仓金额 / 盈亏六档统计报表</h3>
+            <div class="spec-list">
+              <div class="spec-item"><strong>统计对象</strong><span>报表仅统计迷你合约持仓，按全仓、逐仓、多仓、空仓四个组合维度分开展示。</span></div>
+              <div class="spec-item"><strong>持仓金额六档</strong><span>报表固定按六档展示：0至5,000、5,000至50,000、50,000至200,000、200,000至1,000,000、1,000,000至2,000,000、2,000,000以上。</span></div>
+              <div class="spec-item"><strong>金额显示规则</strong><span>报表中的金额类字段统一按缩写展示：0至10,000 显示具体数值；10,001至1,000,000 显示为 K；1,000,001 以上显示为 M。</span></div>
+              <div class="spec-item"><strong>持仓金额口径</strong><span>表格内对应金额列展示该组合在该持仓金额档位下的合计持仓金额，金额单位统一为 USDT。</span></div>
+              <div class="spec-item"><strong>持仓盈亏口径</strong><span>表格内对应盈亏列展示该组合在该持仓金额档位下的合计持仓盈亏金额，金额单位统一为 USDT。</span></div>
+              <div class="spec-item"><strong>曲线图辅助分析</strong><span>报表下方同步提供持仓金额六档曲线图和持仓盈亏六档曲线图，用于更直观比较全仓 / 逐仓、多仓 / 空仓四类组合在各档位的变化。</span></div>
+              <div class="spec-item"><strong>全仓 / 逐仓 / 多仓 / 空仓</strong><span>全仓表示该持仓条目采用全仓保证金模式；逐仓表示该持仓条目采用逐仓保证金模式；多仓表示做多方向；空仓表示做空方向。</span></div>
             </div>
           </div>
           <div class="spec-block">
